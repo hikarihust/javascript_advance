@@ -1,0 +1,18 @@
+                                            Một số điều cần biết về Javascript
+
+Javascript Runtime và Javascript Engine
+    JS Runtime & Engine 
+        JS Runtime và JS Engine là 2 thành phần chính để js có thể chạy được ở trên trình duyệt
+        JS Runtime: Xét trong môi trường browser(trình duyệt)
+        Đối với môi trường browser có 4 thành phần chính để giúp Javascript có thể chạy được cũng như xử lý được 
+            các task vụ bất đồng bộ: Js Engine, Web APIs, Event Loops và Callback Queues
+        Trong đó có thành phần quan trọng nhất là Js Engine
+        Còn lại 3 thành phần khác có thể quản lý được các task vụ bất đồng bộ bao gồm
+            Web APIs, Even Loops và Callback Queues
+        Trong Js Engine lại tiếp tục được chia làm 2 thành phần chính là: Memory và Call Stack
+            Memory: Để đoạn code có thể chạy được thì cần phải quản lý liên quan đến bộ nhớ. Khi khai báo các biến hay các hàm thì nó sẽ lưu trữ vào trong Memory
+            Call Stack: Quản lý đoạn code nào đang thực thi. Khi hàm nào được thực thi thì nó sẽ được đẩy vào trong Call Stack, nếu hàm được thục thi xong thì sẽ được 
+                remove ra khỏi Call Stack. Đối với Call Stack thì nó chỉ xử lý các task vụ đồng bộ trong Javascript thôi. Để xử lý được các task vụ bất đồng bộ thì cần 
+                có thêm sự hỗ trợ của Event Loops và Callback Queues. Callback Queues cũng để quản thứ tự thực thi
+        Js là 1 ngôn ngữ đơn luồng(Single Thread), ko thể thực thi song song cùng 1 lúc 2 task vụ được
+    
