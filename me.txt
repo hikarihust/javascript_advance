@@ -15,4 +15,16 @@ Javascript Runtime và Javascript Engine
                 remove ra khỏi Call Stack. Đối với Call Stack thì nó chỉ xử lý các task vụ đồng bộ trong Javascript thôi. Để xử lý được các task vụ bất đồng bộ thì cần 
                 có thêm sự hỗ trợ của Event Loops và Callback Queues. Callback Queues cũng để quản thứ tự thực thi
         Js là 1 ngôn ngữ đơn luồng(Single Thread), ko thể thực thi song song cùng 1 lúc 2 task vụ được
+Execution Context(ngữ cảnh thực thi)
+    Context: Ngữ cảnh
+    Execution: Thực thi
+    Khi 1 đoạn chương trình Javascript được chạy thì Javascript Engine luôn luôn khởi tạo mới 1 Execution Context để theo dõi và và quản lý và giám sát trình tự thực thi
+    Đoạn chương trình này có thể là 1 chương trình con hoặc toàn bộ ứng dụng khi khởi chạy lần đầu tiên 
+        Chương trình chính(App): Global Execution Context(ngữ cảnh thực thi toàn cục)
+        Chương trình con: Local Execution Context(ngữ cảnh thực thi cục bộ). Trong Js nói riêng hay lập trình nói chung thì các chương trình con mình coi đó là các function hay các method của object 
+            nào đó
+        App chỉ có 1 ngữ cảnh thực thi toàn cục và có thể có nhiều ngữ cảnh thực thi cục bộ
+    Khi Js Engine tạo ra một Execution Context thì nó luôn luôn qua 2 giai đoạn: Creation Phase(giai đoạn khởi tạo) và Execution Phase(giai đoạn thực thi) 
+    Creation Phase: Làm nhiều việc trong đó có việc setup memory để khởi tạo các biến toàn cục hay các biến local lưu trữ các biến, hàm
+    Khi chương trình con được thực thi xong thì Execution Context sẽ được xoá bỏ và Javascript Engine sẽ thu dọn các biến môi trường nằm trong giai đoạn Creation Phase đã lhoiwr tạo
     
