@@ -45,4 +45,6 @@ Creation Phase(Giai đoạn khởi tạo)
     Khi chạy 1 app có Global memory: global = window = this 
     var: tầm vực global memory 
     let, const: Tầm vực Script Scope
+Practice
+    Practice 01
     
