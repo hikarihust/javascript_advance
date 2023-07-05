@@ -47,4 +47,13 @@ Creation Phase(Giai đoạn khởi tạo)
     let, const: Tầm vực Script Scope
 Practice
     Practice 01
+    Temporal Dead Zone(TDZ)
+        TDZ luôn luôn được khởi tạo khi bắt đầu 1 tầm vực mới và bên trong đó có sử dụng từ khóa let 
+        Trong khu vực TDZ này ko thể sử dụng, truy cập được vào biến hay gán biến đó cho 1 giá trị, khi khởi tạo biến age thì sẽ kết 
+            thúc khu vực TDZ 
+        Khi muốn chia sẻ dữ liệu giữa 2 Scope khác nhau thì bắt buộc phải đẩy lên cấp cao hơn
+        Cấp cao hơn tầm vực Script là Scope Global(window, this)
+        window, this: giúp chia sẻ dữ liệu giữa 2 file 
+            window.hello='world'
+            this.course='Javascript'
     
