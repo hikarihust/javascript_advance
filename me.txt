@@ -27,4 +27,22 @@ Execution Context(ngữ cảnh thực thi)
     Khi Js Engine tạo ra một Execution Context thì nó luôn luôn qua 2 giai đoạn: Creation Phase(giai đoạn khởi tạo) và Execution Phase(giai đoạn thực thi) 
     Creation Phase: Làm nhiều việc trong đó có việc setup memory để khởi tạo các biến toàn cục hay các biến local lưu trữ các biến, hàm
     Khi chương trình con được thực thi xong thì Execution Context sẽ được xoá bỏ và Javascript Engine sẽ thu dọn các biến môi trường nằm trong giai đoạn Creation Phase đã lhoiwr tạo
+Creation Phase(Giai đoạn khởi tạo)
+    Giúp mình hiểu được các vấn đề liên quan đến tầm vực(Scope Chain) trong Javascript. Hiểu được từ khoá this trong Javascript
+    Creation Phase sẽ làm 3 việc: Setup memory, Định nghĩa Scope Chain, Ràng buộc từ khóa this
+    - Setup memory(Variables Envionments): Để lưu các giá trị các biến các hàm mà mình sẽ sử dụng trong chương trình. Phải có bước này thì chương trình mới có thể hoạ động được
+    - Định nghĩa Scope Chain: Trong Javascript có khá nhiều dạng scope khác nhau. Scope có nghĩa là tầm vực, có nghĩa là làm sao có thể chia sẻ các biến của mình cho các tầm vực khác, hàm khác, file
+        khác
+        - Global Scope
+        - Script Scope 
+        - Block Scope 
+        - Function Scope 
+    - Ràng buộc từ khóa this (Ngoại trừ Arrow Function): Giúp dàng buộc từ khoá this vào trong ngữ cảnh thực thi. Đối với các function bình thường(ngoại trừ Arrow Function) thì nó sẽ tiến hành dàng buộc theo 3 dạng
+        - Default binding: Dàng buộc mặc định 
+        - Implicit binding: Dàng buộc ngầm
+        - Explicit binding: Dàng buộc tường minh
+        Đối với Arrow Function thì nó không tiến hành dàng buộc từ khoá this vào
+    Khi chạy 1 app có Global memory: global = window = this 
+    var: tầm vực global memory 
+    let, const: Tầm vực Script Scope
     
