@@ -67,4 +67,5 @@ First Class Objects trong Javascript
     First Class Function trong Javascript:
         Function trong Javascript cũng được coi như 1 Objects cho nên 1 function có thể được truyền vào trong 1 function khác,
             gán vào trong 1 biến, return 1 function ở bên trong 1 function khác
+Tìm hiểu sâu về Function trong Javascript
     
