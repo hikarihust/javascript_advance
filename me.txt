@@ -69,10 +69,11 @@ First Class Objects trong Javascript
             gán vào trong 1 biến, return 1 function ở bên trong 1 function khác
 Tìm hiểu sâu về Function trong Javascript
 Higher Order Functions và Callbacks
-       HOF và Calllbacks 01
+    HOF và Calllbacks 01
         Higher order functions là những hàm thỏa một trong hai điều kiện sau:
             Có thể nhận một function khác như là một đối số (argument)
             Output là một function
         Có rất nhiều Function cốt lõi của Javascript sử dụng cơ chế này khiến cho mã nguồn dễ đọc, đễ hiểu hơn
             như map, filter, reduce, ..
+    HOF và Calllbacks 02
     
