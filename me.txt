@@ -76,4 +76,6 @@ Higher Order Functions và Callbacks
         Có rất nhiều Function cốt lõi của Javascript sử dụng cơ chế này khiến cho mã nguồn dễ đọc, đễ hiểu hơn
             như map, filter, reduce, ..
     HOF và Calllbacks 02
+Closure là gì và ứng dụng
+    Closure 01
     
