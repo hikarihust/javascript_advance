@@ -83,4 +83,5 @@ Implicit Binding và từ khóa "this"
     This keyword
 Explicit Binding, bind, call và apply
     Bind
+    Call và apply
     
