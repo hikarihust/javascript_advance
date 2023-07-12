@@ -79,4 +79,6 @@ Higher Order Functions và Callbacks
 Closure là gì và ứng dụng
     Closure 01
     Closure 02
+Implicit Binding và từ khóa "this" 
+    This keyword
     
