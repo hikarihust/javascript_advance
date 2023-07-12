@@ -45,7 +45,7 @@ Creation Phase(Giai đoạn khởi tạo)
     Khi chạy 1 app có Global memory: global = window = this 
     var: tầm vực global memory 
     let, const: Tầm vực Script Scope
-Practice
+Bài tập thực hành số 01 02 03
     Practice 01
     Temporal Dead Zone(TDZ)
         TDZ luôn luôn được khởi tạo khi bắt đầu 1 tầm vực mới và bên trong đó có sử dụng từ khóa let 
@@ -84,4 +84,6 @@ Implicit Binding và từ khóa "this"
 Explicit Binding, bind, call và apply
     Bind
     Call và apply
+Bài tập thực hành số 04
+    Practice 04
     
