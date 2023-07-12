@@ -78,4 +78,5 @@ Higher Order Functions và Callbacks
     HOF và Calllbacks 02
 Closure là gì và ứng dụng
     Closure 01
+    Closure 02
     
