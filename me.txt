@@ -81,4 +81,6 @@ Closure là gì và ứng dụng
     Closure 02
 Implicit Binding và từ khóa "this" 
     This keyword
+Explicit Binding, bind, call và apply
+    Bind
     
