@@ -86,4 +86,6 @@ Explicit Binding, bind, call và apply
     Call và apply
 Bài tập thực hành số 04
     Practice 04
+Strict mode
+    Strict mode
     
