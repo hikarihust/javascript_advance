@@ -89,3 +89,10 @@ Bài tập thực hành số 04
 Strict mode
     Strict mode
     
+    ===================================================================================================================
+
+                                        Asynchronous ProgrammingChương Asynchronous Programming
+                                        
+Concurrency và Parallelism
+    Concurrency, Parallelism
+    
