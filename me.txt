@@ -95,4 +95,6 @@ Strict mode
                                         
 Concurrency và Parallelism
     Concurrency, Parallelism
+Single Thread và Blocking
+    Single thread, Blocking
     
