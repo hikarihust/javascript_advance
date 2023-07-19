@@ -99,4 +99,6 @@ Single Thread và Blocking
     Single thread, Blocking
 SetTimeout và những hiện tượng lạ
     SetTimeout
+Concurrency model trong Javascript
+    Concurrency Modal và Web APIs
     
