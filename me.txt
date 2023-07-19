@@ -101,4 +101,6 @@ SetTimeout và những hiện tượng lạ
     SetTimeout
 Concurrency model trong Javascript
     Concurrency Modal và Web APIs
+Event Loop và Callback Queues
+    Event Loop và Callback Queues
     
