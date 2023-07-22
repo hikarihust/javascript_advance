@@ -106,4 +106,5 @@ Event Loop và Callback Queues
 Bài tập thực hành số 01 02
     Practice 01
     Practice 01 - Solution
+    Practice 02
     
