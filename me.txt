@@ -103,4 +103,6 @@ Concurrency model trong Javascript
     Concurrency Modal và Web APIs
 Event Loop và Callback Queues
     Event Loop và Callback Queues
+Bài tập thực hành số 01 02
+    Practice 01
     
