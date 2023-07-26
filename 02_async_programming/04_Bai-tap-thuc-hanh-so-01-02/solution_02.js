@@ -33,20 +33,35 @@ function fakeGetData(url, callbackFn) {
 
 function startRunAPI(url) {
   let res = null;
+  let callback = null;
 
   fakeGetData(url, function(data) {
-    res = data;
+    if (callback !== null) {
+      callback(data); // cbFn(res)
+    } else {
+      res = data;
+    }
   })
 
   return function getData(cbFn) {
-    cbFn(res);
+    if (res !== null) {
+      cbFn(res);
+    } else {
+      callback = cbFn;
+    }
   }
 }
 
-let fnGetData1 = startRunAPI('https://quangvu.com/api/1');
-let fnGetData2 = startRunAPI('https://quangvu.com/api/2');
-let fnGetData3 = startRunAPI('https://quangvu.com/api/3');
+let fnGetData1 = startRunAPI('https://quangvu.com/api/1'); // thunk
+let fnGetData2 = startRunAPI('https://quangvu.com/api/2'); // thunk
+let fnGetData3 = startRunAPI('https://quangvu.com/api/3'); // thunk
 
 fnGetData1(function(res1) {
   console.log(res1)
+  fnGetData2(function(res2){
+    console.log(res2)
+    fnGetData3(function(res3){
+      console.log(res3)
+    })
+  })
 })
